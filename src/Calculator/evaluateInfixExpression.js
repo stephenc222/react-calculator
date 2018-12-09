@@ -54,7 +54,6 @@ const evaluatePostfixExpression = expression => {
                 const right = stack.pop();
                 const left = stack.pop();
                 const r = op[token](left, right);
-                console.log(`${left} ${token} ${right} = ${r}`);
                 stack.push(r);
             } else {
                 throw new Error('Invalid Expression');

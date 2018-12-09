@@ -3,7 +3,10 @@ import React from 'react'
 const Display = (props) => {
   const { calcDisplay } = props
   return (
-    <div>
+    <div 
+      style={{
+        fontSize: '18px',
+      }}>
       {calcDisplay}
     </div>
   )
